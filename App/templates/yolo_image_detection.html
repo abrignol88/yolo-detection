@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+
+<div class="w3-container">
+<h2>Image Detection</h2>
+
+<!-- {% if file_url %}
+<img src="{{ file_url }}" style="max-width: 100%" />
+{% endif %}
+
+<br>
+<h2>Output Image</h2> -->
+{% if img_data %}
+<img src="data:image/jpeg;base64,{{ img_data }}" style="max-width: 100%" />
+{% endif %}
+</div>
+
+</div>
+      
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+
+<!-- <img src="img_car.jpg" alt="Car" style="width:100%"> -->
+
+<div class="w3-container">
+<h2>Image Detection</h2>
+<p>Upload an image to apply object detection</p>
+
+<form id="upload-form" action="/yolo_image" method="post" enctype="multipart/form-data">
+  <label for="image">Select Image:</label>
+  <input type="file" id="image" name="image" accept="image/*" required><br><br>
+  <input type="submit" value="Upload and Apply Detection">
+</form>
+
+</div>
+</div>
+      
+</body>
+</html>
